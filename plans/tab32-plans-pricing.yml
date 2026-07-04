@@ -1,0 +1,112 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: tab32
+providerId: tab32
+created: '2026-07-04'
+modified: '2026-07-04'
+reconciled: false
+tags:
+- Dental
+- Practice Management
+- DSO
+- Plans
+description: >-
+  tab32 sells its cloud dental platform as a monthly, per-practice subscription
+  with no upfront license fee - a deliberate contrast to legacy dental systems.
+  Two products are offered: Alpine for small / solo practices (1-3 providers,
+  single location), starting around $125/month with a 14-day free trial, and
+  Summit for multi-location groups and DSOs with custom / enterprise pricing.
+  tab32's API is NOT sold as a separate self-service plan or metered API tier.
+  API access is partner-gated - provisioned to Summit / enterprise DSO customers
+  and approved third-party developers through the developer API portal as part of
+  a partnership or enterprise agreement. There is no published public API price
+  list. Exact platform rates vary by practice size, location count, and features
+  and require a quote.
+notes: >-
+  Pricing figures are sourced from tab32's public pricing page and third-party
+  pricing summaries and may change - verify current Alpine / Summit rates and any
+  API / integration entitlements directly with tab32 during reconciliation. API
+  access terms are established through tab32's partnership / enterprise process,
+  not a public developer signup.
+sources:
+- https://tab32.com/pricing/
+- https://tab32.com/platform/
+- https://tab32.com/application-programming-interface
+plans:
+- id: tab32-alpine
+  name: Alpine
+  type: paid
+  description: >-
+    Cloud dental practice management for small and solo practices (1-3 providers,
+    single location). Monthly subscription with no upfront license fee and a
+    14-day free trial. Covers scheduling, charting, imaging, insurance /
+    revenue cycle, and patient engagement.
+  entries:
+  - label: Practice Subscription
+    name: alpine_subscription
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: from ~$125/month per practice (see pricing page)
+    userMultiplied: false
+  elements:
+  - name: Cloud Practice Management
+  - name: Clinical Charting and Imaging
+  - name: Insurance and Revenue Cycle
+  - name: Patient Engagement
+  - name: 14-Day Free Trial
+- id: tab32-summit
+  name: Summit
+  type: enterprise
+  description: >-
+    Enterprise cloud dental platform for multi-location groups and DSOs with
+    unlimited providers across multiple locations. Custom pricing and enterprise
+    support, enterprise SSO, open data warehouse access, and - through a
+    partnership / enterprise agreement - access to the tab32 developer API portal.
+  entries:
+  - label: Enterprise Agreement
+    name: summit_enterprise
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: custom (contact tab32)
+    userMultiplied: false
+  elements:
+  - name: Multi-Location and Unlimited Providers
+  - name: Enterprise Support and SSO
+  - name: Open Data Warehouse Access
+  - name: Developer API Portal Access (partner-gated)
+- id: tab32-api-access
+  name: API / Developer Access
+  type: enterprise
+  description: >-
+    The tab32 API (Apigee-powered, HIPAA / SOC 2 compliant) is not sold as a
+    standalone self-service or metered plan. Access is partner-gated and
+    provisioned to DSOs / enterprise customers and approved third-party
+    developers through the developer API portal as part of a partnership or
+    enterprise arrangement. No public API price list is published.
+  entries:
+  - label: API Access
+    name: api_access
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: partner-gated - arranged via partnership / enterprise agreement (no public price)
+    userMultiplied: false
+  elements:
+  - name: Developer API Portal
+  - name: Patient / Provider / Schedule / Charts / Notes / Ledger / Payments Data
+  - name: Documentation and Sample Code
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

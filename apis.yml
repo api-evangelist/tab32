@@ -1,0 +1,145 @@
+aid: tab32
+url: https://raw.githubusercontent.com/api-evangelist/tab32/refs/heads/main/apis.yml
+name: tab32
+kind: company
+description: tab32 is a cloud-based dental practice management, imaging, and analytics
+  platform for dental practices and dental service organizations (DSOs). tab32 offers
+  a real, commercial API - powered by Google Apigee and HIPAA / SOC 2 Type II
+  compliant - that exposes tab32's patient, provider, schedule, charts, notes, ledger,
+  and payments data objects to DSOs and third-party developers. Access is
+  partner-gated, not open self-service - developers reach the API through tab32's
+  developer API portal after establishing a partnership or enterprise relationship,
+  and full endpoint reference, authentication, and base URL details live behind that
+  portal rather than on the public website. The API entries below are modeled from
+  tab32's publicly documented data objects and API messaging; their endpoint paths
+  are not published publicly and are therefore illustrative, not confirmed.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Dental
+- Practice Management
+- Healthcare
+- Cloud Dental Software
+- DSO
+- HIPAA
+- Patient Data
+- Partner API
+created: '2026-07-04'
+modified: '2026-07-04'
+specificationVersion: '0.19'
+apis:
+- aid: tab32:tab32-patients-api
+  name: tab32 Patients API
+  tags:
+  - Patients
+  - Records
+  - Healthcare
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  - url: https://tab32.com/tab32-revolutionizes-dental-software-development-with-the-launch-of-its-comprehensive-api/
+    type: Documentation
+  description: Access to the tab32 patient data object - demographics, contact and
+    insurance details, and patient records - for integrating patient management into
+    CRM, patient-facing apps, and enterprise systems. Endpoint paths are not
+    published publicly; access is via the partner-gated developer portal. Modeled
+    from tab32's documented API data objects.
+- aid: tab32:tab32-providers-api
+  name: tab32 Providers API
+  tags:
+  - Providers
+  - Practitioners
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  description: Access to the tab32 provider data object - dentists, hygienists, and
+    other practitioners across a practice or DSO's locations. Endpoint paths are not
+    published publicly; access is via the partner-gated developer portal. Modeled
+    from tab32's documented API data objects.
+- aid: tab32:tab32-schedule-api
+  name: tab32 Schedule API
+  tags:
+  - Scheduling
+  - Appointments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  description: Access to the tab32 schedule data object - appointments, availability,
+    and booking - supporting online booking, recall, and appointment-scheduling
+    integrations. Endpoint paths are not published publicly; access is via the
+    partner-gated developer portal. Modeled from tab32's documented API data objects.
+- aid: tab32:tab32-charts-api
+  name: tab32 Charts API
+  tags:
+  - Charts
+  - Clinical
+  - Treatment Planning
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  description: Access to the tab32 charts data object - clinical and periodontal
+    charting and treatment planning data - for clinical workflow and analytics
+    integrations. Endpoint paths are not published publicly; access is via the
+    partner-gated developer portal. Modeled from tab32's documented API data objects.
+- aid: tab32:tab32-notes-api
+  name: tab32 Notes API
+  tags:
+  - Notes
+  - Clinical
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  description: Access to the tab32 notes data object - clinical and progress notes
+    attached to patient and encounter records. Endpoint paths are not published
+    publicly; access is via the partner-gated developer portal. Modeled from tab32's
+    documented API data objects.
+- aid: tab32:tab32-ledger-api
+  name: tab32 Ledger API
+  tags:
+  - Ledger
+  - Billing
+  - Revenue Cycle
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  description: Access to the tab32 ledger data object - patient and practice financial
+    ledger, charges, and insurance claim / revenue-cycle data. Endpoint paths are
+    not published publicly; access is via the partner-gated developer portal. Modeled
+    from tab32's documented API data objects.
+- aid: tab32:tab32-payments-api
+  name: tab32 Payments API
+  tags:
+  - Payments
+  - Billing
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://tab32.com/application-programming-interface
+  properties:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+  description: Access to the tab32 payments data object - patient payments and
+    transaction records (tab32 integrates payment processing via Stripe). Endpoint
+    paths are not published publicly; access is via the partner-gated developer
+    portal. Modeled from tab32's documented API data objects.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/tab32
+- type: Website
+  url: https://tab32.com
+- type: Documentation
+  url: https://tab32.com/application-programming-interface
+- type: Plans
+  url: plans/tab32-plans-pricing.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,83 @@
+aid: tab32
+name: tab32
+review:
+  question: Does tab32 expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-04'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. tab32's API is a REST / HTTPS API
+    fronted by Google Apigee (Apigee's integrated developer portal is a
+    request/response REST platform). No server-push transport - WebSocket or
+    SSE - is documented on tab32's public API surface. In addition, tab32 does
+    not publish its API endpoint reference, base URL, or authentication details
+    publicly; the API is partner-gated behind a developer portal, so there is no
+    public message-driven surface to model.
+findings:
+  summary: |
+    tab32 does not publish a documented public WebSocket API. tab32 is a
+    cloud-based dental practice management, imaging, and analytics platform.
+    It offers a real, commercial API - marketed as "the dental industry's most
+    comprehensive API" - powered by Google Apigee and HIPAA / SOC 2 Type II
+    compliant. The API exposes tab32's patient, provider, schedule, charts,
+    notes, ledger, and payments data objects to DSOs and third-party developers.
+    Access is partner-gated: developers reach it through tab32's developer API
+    portal after establishing a partnership or enterprise relationship. tab32's
+    public website describes the data objects, developer portal, documentation,
+    and sample resources but does NOT publish endpoint paths, base URLs, or
+    authentication schemes openly. No realtime, bidirectional, or streaming
+    WebSocket (ws:// or wss://) endpoint is documented anywhere on tab32's
+    public API surface.
+  accessModel: |
+    Commercial, partner-gated REST API. Not open self-service. The full
+    endpoint reference, base URL, and authentication (Apigee API keys / OAuth)
+    live behind the developer API portal and are provisioned to DSOs and
+    approved third-party developers, not published on the public website.
+  endpointsModeled: true
+  endpointsModeledNote: |
+    The seven API entries in apis.yml (Patients, Providers, Schedule, Charts,
+    Notes, Ledger, Payments) are modeled from tab32's publicly documented API
+    data objects. Their endpoint paths are illustrative and NOT confirmed - no
+    public API reference or OpenAPI document is published by tab32. No OpenAPI,
+    Postman collection, or rate-limit document was fabricated.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: true
+      note: tab32 API is a REST/HTTPS API fronted by Google Apigee. Base URL and endpoint paths are not published publicly (partner-gated developer portal).
+    - protocol: HL7
+      scheme: n/a
+      documented: true
+      note: tab32 states the platform also supports HL7 healthcare-data integration alongside its API. Not a WebSocket transport.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere on tab32's public API or platform pages as of the review date.
+  endpointsConfirmedRest: []
+  endpointsConfirmedRestNote: |
+    None. tab32 does not publish confirmed REST endpoint paths publicly; the API
+    reference is behind the partner-gated Apigee developer portal.
+sources:
+  - url: https://tab32.com/application-programming-interface
+    type: Documentation
+    note: tab32 API overview - lists data objects (patient, provider, schedule, charts, notes, ledger, payments), Apigee, HIPAA/SOC2, developer API portal. No public endpoint reference.
+  - url: https://tab32.com/tab32-revolutionizes-dental-software-development-with-the-launch-of-its-comprehensive-api/
+    type: Documentation
+    note: API launch announcement - DSOs and third-party developers, comprehensive documentation and sample code, no public endpoint URLs.
+  - url: https://tab32.com/platform/
+    type: Website
+    note: Platform overview - 100% cloud on GCP, HIPAA and SOC 2 Type II, Stripe/DentalXChange/Pearl AI integrations, HL7 support.
+  - url: https://tab32.com/pricing/
+    type: Website
+    note: Practice subscription pricing (Alpine / Summit). API access is arranged via partnership, not listed as a self-service plan.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket protocol surface exists, and tab32's API is a partner-gated
+    REST API with no publicly documented endpoint reference. No AsyncAPI, OpenAPI,
+    collection, rate-limit, or finops document was created because there is no
+    public, message-driven or endpoint-level surface to model. The seven API
+    entries were modeled honestly from tab32's documented data objects, with the
+    partner-gated access model stated plainly in the description and README.
