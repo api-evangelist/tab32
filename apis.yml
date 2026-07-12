@@ -132,6 +132,8 @@ apis:
     paths are not published publicly; access is via the partner-gated developer
     portal. Modeled from tab32's documented API data objects.
 common:
+- type: DomainSecurity
+  url: security/tab32-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/tab32
 - type: Website
