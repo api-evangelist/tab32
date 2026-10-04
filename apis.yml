@@ -51,6 +51,7 @@ modified: '2026-07-04'
 specificationVersion: '0.23'
 apis:
 - aid: tab32:tab32-patients-api
+  endpointsModeled: true
   name: tab32 Patients API
   tags:
   - Patients
@@ -69,6 +70,7 @@ apis:
     published publicly; access is via the partner-gated developer portal. Modeled
     from tab32's documented API data objects.
 - aid: tab32:tab32-providers-api
+  endpointsModeled: true
   name: tab32 Providers API
   tags:
   - Providers
@@ -83,6 +85,7 @@ apis:
     published publicly; access is via the partner-gated developer portal. Modeled
     from tab32's documented API data objects.
 - aid: tab32:tab32-schedule-api
+  endpointsModeled: true
   name: tab32 Schedule API
   tags:
   - Scheduling
@@ -97,6 +100,7 @@ apis:
     integrations. Endpoint paths are not published publicly; access is via the
     partner-gated developer portal. Modeled from tab32's documented API data objects.
 - aid: tab32:tab32-charts-api
+  endpointsModeled: true
   name: tab32 Charts API
   tags:
   - Charts
@@ -112,6 +116,7 @@ apis:
     integrations. Endpoint paths are not published publicly; access is via the
     partner-gated developer portal. Modeled from tab32's documented API data objects.
 - aid: tab32:tab32-notes-api
+  endpointsModeled: true
   name: tab32 Notes API
   tags:
   - Notes
@@ -126,6 +131,7 @@ apis:
     publicly; access is via the partner-gated developer portal. Modeled from tab32's
     documented API data objects.
 - aid: tab32:tab32-ledger-api
+  endpointsModeled: true
   name: tab32 Ledger API
   tags:
   - Ledger
@@ -141,6 +147,7 @@ apis:
     not published publicly; access is via the partner-gated developer portal. Modeled
     from tab32's documented API data objects.
 - aid: tab32:tab32-payments-api
+  endpointsModeled: true
   name: tab32 Payments API
   tags:
   - Payments
