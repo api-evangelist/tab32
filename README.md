@@ -1,4 +1,4 @@
-# tab32 (tab32)
+# tab32
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,65 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-tab32 is a cloud-based dental practice management, imaging, and analytics platform for dental practices and dental service organizations (DSOs). Founded in 2012 and running on Google Cloud Platform, tab32 offers an all-in-one "100% cloud" system covering scheduling, clinical charting, imaging with AI radiology detection, revenue cycle / insurance, patient engagement, and an open data warehouse.
+tab32 is a cloud-based dental practice management, imaging, and analytics platform for dental practices and dental service organizations (DSOs). tab32 offers a real, commercial API - powered by Google Apigee and HIPAA / SOC 2 Type II compliant - that exposes tab32's patient, provider, schedule, charts, notes, ledger, and payments data objects to DSOs and third-party developers. Access is partner-gated, not open self-service - developers reach the API through tab32's developer API portal after establishing a partnership or enterprise relationship, and full endpoint reference, authentication, and base URL details live behind that portal rather than on the public website. The API entries below are modeled from tab32's publicly documented data objects and API messaging; their endpoint paths are not published publicly and are therefore illustrative, not confirmed.
 
-tab32 also offers a real, **commercial API**. It is powered by Google Apigee, is HIPAA and SOC 2 Type II compliant, and exposes tab32's `patient`, `provider`, `schedule`, `charts`, `notes`, `ledger`, and `payments` data objects.
+**Areas:** Dental · Practice Management · Healthcare · Cloud Dental Software · DSO · HIPAA · Patient Data · Partner API
 
-## API Access Model
+## tab32 on APIs.io
 
-Access is **partner-gated, not open self-service.** The API is offered to DSOs and third-party developers who reach it through tab32's developer API portal after establishing a partnership or enterprise relationship. tab32's public site describes the API's data objects, developer portal, documentation, and sample resources, but it does **not** publish endpoint reference paths, base URLs, or authentication details openly — those live behind the developer portal. Accordingly, the API entries in this catalog are **modeled** from tab32's publicly documented data objects and API messaging; their endpoint paths are illustrative, not confirmed.
+Everything profiled for tab32 is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tab32/](https://apis.io/providers/tab32/)** — or go straight to one of the APIs or properties below.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/tab32/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/tab32/refs/heads/main/apis.yml)
+### APIs (7)
 
-## Tags
+- [tab32 Patients API](https://apis.io/apis/tab32/tab32-patients-api/) — Access to the tab32 patient data object - demographics, contact and insurance details, and patient records - for integrating patient management into CRM,…
+- [tab32 Providers API](https://apis.io/apis/tab32/tab32-providers-api/) — Access to the tab32 provider data object - dentists, hygienists, and other practitioners across a practice or DSO's locations. Endpoint paths are not…
+- [tab32 Schedule API](https://apis.io/apis/tab32/tab32-schedule-api/) — Access to the tab32 schedule data object - appointments, availability, and booking - supporting online booking, recall, and appointment-scheduling…
+- [tab32 Charts API](https://apis.io/apis/tab32/tab32-charts-api/) — Access to the tab32 charts data object - clinical and periodontal charting and treatment planning data - for clinical workflow and analytics integrations.…
+- [tab32 Notes API](https://apis.io/apis/tab32/tab32-notes-api/) — Access to the tab32 notes data object - clinical and progress notes attached to patient and encounter records. Endpoint paths are not published publicly;…
+- [tab32 Ledger API](https://apis.io/apis/tab32/tab32-ledger-api/) — Access to the tab32 ledger data object - patient and practice financial ledger, charges, and insurance claim / revenue-cycle data. Endpoint paths are not…
+- [tab32 Payments API](https://apis.io/apis/tab32/tab32-payments-api/) — Access to the tab32 payments data object - patient payments and transaction records (tab32 integrates payment processing via Stripe). Endpoint paths are not…
 
-- Dental
-- Practice Management
-- Healthcare
-- Cloud Dental Software
-- DSO
-- HIPAA
-- Patient Data
-- Partner API
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-07-04
-- **Modified:** 2026-07-04
+#### Security (1)
 
-## APIs (Modeled)
+Authentication, trust centre, and vulnerability disclosure.
 
-The following logical APIs are modeled from tab32's documented API data objects (patient, provider, schedule, charts, notes, ledger, payments). Endpoint paths are not published publicly.
+- [Tab32 Domain Security](https://apis.io/security/tab32/tab32-domain-security/)
 
-### tab32 Patients API
-Access to the tab32 patient data object — demographics, contact and insurance details, and patient records — for integrating patient management into CRM, patient-facing apps, and enterprise systems.
+#### Plans and pricing (1)
 
-### tab32 Providers API
-Access to the tab32 provider data object — dentists, hygienists, and other practitioners across a practice or DSO's locations.
+Published plans, tiers and prices.
 
-### tab32 Schedule API
-Access to the tab32 schedule data object — appointments, availability, and booking — supporting online booking, recall, and scheduling integrations.
+- [Tab32 Plans Pricing](https://apis.io/plans/tab32/tab32-plans-pricing/)
 
-### tab32 Charts API
-Access to the tab32 charts data object — clinical / periodontal charting and treatment planning data.
+## Where to find this API
 
-### tab32 Notes API
-Access to the tab32 notes data object — clinical and progress notes attached to patient and encounter records.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### tab32 Ledger API
-Access to the tab32 ledger data object — patient and practice financial ledger, charges, and insurance claim / revenue-cycle data.
-
-### tab32 Payments API
-Access to the tab32 payments data object — patient payments and transaction records (tab32 integrates payment processing via Stripe).
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/tab32)
 - [Website](https://tab32.com)
 - [Documentation](https://tab32.com/application-programming-interface)
-- [Plans](plans/tab32-plans-pricing.yml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 6.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tab32/](https://apis.io/providers/tab32/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for tab32: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tab32/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
